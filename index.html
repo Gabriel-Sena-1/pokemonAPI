@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons</title>
+    <script>
+        import registraPokemon from './api.js'
+    </script>
+
+</head>
+
+<body>
+    <h1>Pokémons</h1>
+    <div id="pokemons-container"></div>
+</body>
+
+<script type="module/javascript" src="./api.js"></script>
+
+<script>
+    registraPokemons().then(pokemons => {
+        paginaPokemons(pokemons);
+    });
+</script>
+
+
+</html>
